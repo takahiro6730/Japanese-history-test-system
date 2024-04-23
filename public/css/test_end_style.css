@@ -1,0 +1,150 @@
+/* -----------mainviual----------- */
+.mainvisual{
+    padding-top: 80px;
+    height: 100vh;
+    position: relative;
+}
+.mainvisual img{
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+    opacity: 0.7;
+}
+.end_field{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.test_end_notice{
+    width: 100%;
+    padding-bottom: 150px;
+}
+.test_end_notice p {
+    text-align: left;
+}
+.end_field{
+    max-width: 870px;
+    margin: 0 auto;
+    text-align: center;
+}
+.end_field p{
+    width:100%;
+    text-align: center;
+}
+.end_title{
+    font-size: 70px;
+    line-height: 113px;
+}
+.end_context{
+    font-size: 25px;
+    padding: 5px;
+    line-height: 40px;
+}
+.to-top_page{
+    padding: 15px 50px;
+    border-radius: 15px 40px;
+    width: max-content;
+    margin: 0 auto;
+    background-color: #00F589;
+    color: white;
+    font-size: 30px;
+    margin-top: 94px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+
+}
+.to-register_page{
+    margin: 0 auto;
+    width: max-content;
+    padding: 15px 50px;
+    border-radius: 15px 40px;
+    background-color: #13AE6A;
+    color: white;
+    font-size: 30px;
+    margin-top: 94px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#mark_and_re{
+    display: none;
+}
+.to-top_page:hover, .to-register_page:hover{
+    cursor: pointer;
+    /* text-shadow: 3px 5px black; */
+    background-color: white;
+    color: #13AE6A;
+    border: 2px solid #00F589;
+
+}
+
+#top-page{
+    display: inline-block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+#top-page p{
+    padding: 10px 15px;
+    color: white;
+    background-color: #232323;
+    font-size: 15px;
+    border-radius: 20px;
+    font-family: "YuGothic";
+}
+#top-page:hover {
+    cursor: pointer;
+}
+#top-page:hover p{
+    color: #13AE6A;
+    opacity: 0.8;
+}
+
+
+
+
+/* ------------------------------------ */
+@media only screen and (max-width:1280px) {
+    .end_title{
+        font-size: 60px;
+    }
+    .end_field{
+        width: 100%;
+    }
+    /* .mainvisual{
+        padding-top: 60px;
+    }
+    .mainvisual img{
+        height: calc(100vh - 60px);
+    } */
+    .to-top_page, .to-register_page{
+        font-size: 25px;
+        padding: 20px 25px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .end_field{
+        width: 100%;
+    }
+    .end_field p{
+        text-align: center;
+    }
+    .end_title{
+        font-size: 40px;
+    }
+    .end_context{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:458px) {
+    #mark_and_re{
+        display: block;
+    }
+}

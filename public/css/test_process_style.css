@@ -1,0 +1,126 @@
+/* -----------mainviual----------- */
+body{
+    background-color: #F1FFFB;
+}
+.mainvisual{
+    max-width: 1120px;
+    min-height: calc(100vh - 200px);
+    margin: 0 auto;
+}
+
+.problem-container{
+    padding-top: 180px;
+    height: 60%;
+}
+
+.answer-container{
+    height: 40%;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+
+.problem_count{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.problem_no, .answer_no{
+    font-size: 40px;
+}
+.problem_number{
+    padding: 14px 60px;
+    background-color: #13AE6A;
+    color: white;
+}
+.problem_detail{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.answer_count{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.answer-clock{
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 100px;
+    transform: scaleX(-1);
+}
+
+.answer_number{
+    border-radius: 18px;
+    margin-top: 36px;
+    padding-right: 20px;
+}
+.answer_detail textarea{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #707070;
+    border-radius: 22px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    padding: 20px;
+    font-size: 20px;
+}
+.next_problem{
+    padding: 15px 35px;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 26px;
+    background-color: #13AE6A;
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+}
+.mark_treat{
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.mark_treat img{
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+.next_problem:hover{
+    /* color: #ee4f47; */
+    background-color: aquamarine;
+    border: 2px solid #13AE6A;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1330px) {
+    .mainvisual{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:768px) {
+    .test_site_img img{
+        height: calc(100vh - 50px);
+    }
+    .test_site_img{
+        padding-top: 50px;
+    }
+    .problem_no, .answer_no{
+        font-size: 30px;
+    }
+    .problem_text, .answer_detail{
+        font-size: 15px;
+    }
+    .answer-clock{
+        width: 80px;
+    }
+}

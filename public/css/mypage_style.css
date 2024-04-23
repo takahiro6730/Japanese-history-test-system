@@ -1,0 +1,230 @@
+
+.my_page{
+    padding-top: 170px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.my_page-top-color{
+    position:absolute; 
+    background-color:#CEFFEA; 
+    height:1070px; 
+    z-index:-1; 
+    width:100% 
+}
+.my_page-bottom-color{
+    position:absolute; 
+    background-color:#F5F5DC; 
+    top: 1070px;
+    bottom:0; 
+    right:0; 
+    left:0; 
+    z-index:-1; 
+    width:100%
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.user_information{
+    position: relative;
+    margin-top: 62px;
+}
+
+.user-meister{
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    height: 210px;
+    transform: scaleX(-1);
+}
+.user_information p{ 
+    margin: 0;
+}
+.recent_result{
+    margin-top: 88px;
+}
+.recent_result_detail, .reservation_detail, .passed_test_detail{
+    border: 1px solid #13AE6A;
+    padding: 43px;
+    height: 465px;
+    overflow-y: scroll;
+}
+
+.recent_result_detail p, .reservation_detail p, .passed_test_detail p{
+    margin: 0;
+}
+.recent_test, .reservation_content, .passed_test_content{
+    width: 100%;
+    padding-left: 10px;
+}
+.recent_test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto;
+}
+
+ .recent_context, .reservation_when, .reservation_context, .passed_test_when, .passed_test_context{
+    display: flex;
+    justify-content: left;
+}
+
+.recent_when p, .recent_context p, .reservation_when p, .reservation_context p, .passed_test_when p, .passed_test_context p {
+    padding-right: 50px;
+}
+.recent_test_result, .to_test_site{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+.recent_when .recent_time,.recent_context .recent_level{
+    padding-right: 0;
+}
+
+.recent_result_detail{
+    background-color: white;
+}
+.pass_style{
+    background-color: #FFED08;
+}
+.fail_style{
+    background-color: #F68961;
+}
+.nogaze_style{
+    background-color: #C7C7C7;
+}
+.reservation_list{
+    padding-top: 66px;
+}
+.reservation_detail{
+    background-color: #CEFFEA;
+}
+.to_test_site{
+    background-color: #FFFFFF;
+    border: 1px solid #13AE6A;
+    border-radius: 30px;
+}
+.passed_test_list{
+    padding-top: 100px;
+}
+.passed_test_detail{
+    height: 380px;
+    background-color: #CEFFEA;
+    margin-bottom: 150px;
+}
+.passed_test_content{
+    padding-bottom: 38px;
+}
+@media only screen and (max-width:1280px) {
+    .my_page{
+        width: 90%;
+        padding-top: 120px;
+    }
+    .my_page-top-color{
+        height: 1024px;
+    }
+    .my_page-bottom-color{
+        top: 1024px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    
+    .user_lists{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .passed_list, .reservation_list{
+        width: 100%;
+    }
+    .pass_style, .fail_style, .nogaze_style{
+        font-size: 20px;
+    }
+    .to_test_site{
+        font-size: 20px;
+    }
+    .recent_result_detail, .reservation_detail{
+        height: 400px;
+    }
+
+    .my_page-top-color{
+        height: 960px;
+    }
+    .my_page-bottom-color{
+        top: 960px;
+    }
+
+}
+@media only screen and (max-width:980px) {
+    
+}
+@media only screen and (max-width:768px) {
+    .my_page-top-color{
+        height: 880px;
+    }
+    .my_page-bottom-color{
+        top: 880px;
+    }
+    .title{
+        font-size: 30px;
+    }   
+    p{
+        font-size: 15px;
+    }
+    .edit_btn p{
+        padding: 10px 50px;
+    }
+    .my_page{
+        padding-top: 80px;
+    }
+
+    .user-meister{
+        top: -25px;
+        height: 100px;
+    }
+    .recent_when, .recent_context, .reservation_when, .reservation_context, .passed_test_when, .passed_test_context{
+        justify-content: left;
+        flex-direction: column;
+    }
+    .recent_result_detail, .reservation_detail, .passed_test_detail{
+        padding: 20px;
+    }
+    .to_test_site{
+        padding: 5px;
+        width: 80%;
+        margin: 9px auto;
+        margin-bottom: 20px;
+    }
+    .recent_test_result{
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:530px) {
+    /* .my_page{ */
+        /* padding: 0px; */
+        /* padding-top: 60px; */
+        
+    /* } */
+    .user_information{
+        padding: 10px;
+    }
+    .recent_result_detail, .reservation_detail, .passed_test_detail{
+        padding: 10px;
+    }
+
+    .recent_test_result{
+        padding: 5px 10px;
+    }
+
+}
+@media only screen and (max-width:420px) {
+    .title{
+        font-size: 25px;
+    }
+    .recent_when p, .recent_context p, .reservation_when p, .reservation_context p, .passed_test_when p, .passed_test_context p {
+        font-size: 13px;
+    }
+}

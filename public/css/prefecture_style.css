@@ -1,0 +1,155 @@
+/* -----------mainviual----------- */
+.prefecture_img{
+    padding-top: 80px;
+    position: relative;
+}
+.prefecture_img img {
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+}
+.prefecture_name{
+    padding: 35px 30px;
+    background-color: #13AE6A;
+    color: white;
+    margin: 30px 25px;
+    font-size: 60px;
+    border-radius: 16px;
+    position: absolute;
+}
+
+.test_list_btn:hover{
+    background-color: #13AE6A;
+    border: 1px solid #13AE6A;
+    color: blueviolet;
+    cursor: pointer;
+}
+/* ----------prefecture_detail-------- */
+.prefecture_detail{
+    max-width: 1120px;
+    text-align: left;
+    margin: 0 auto;
+}
+.predetail_title{
+    font-size: 40px;
+    line-height: 65px;
+    font-weight: bold;
+}
+.recent_detail{
+    border: 1px solid #13AE6A;
+    padding: 25px 50px;
+    margin-bottom: 76px;
+}
+.recent_detail p{
+    margin: 0;
+    font-size: 25px;
+}
+.ganre_type{
+    border: 1px solid #13AE6A;
+    padding:  35px 50px;
+    margin-top: 0;
+    margin-bottom: 140px;
+}
+.test_list_btn_group{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 65px;
+    display: flex;
+    justify-content: flex-end;
+}
+.test_list_btn{
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #13AE6A;
+    border-radius: 18px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    background-color: white;
+}
+.ganre_group{
+    display: flex;
+    flex-direction: column;
+}
+.ganre_detail{
+    border: 1px solid #13AE6A;
+    padding: 14px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.ganre_context p{
+    font-size: 25px;
+    margin: 0;
+    
+}
+.ganre_apply{
+    margin: 10px;
+}
+.ganre_apply-btn{
+    background-color: #13AE6A;
+    color: white;
+    padding: 22px 151px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 18px;
+}
+@media only screen and (max-width:1440px) {
+    .prefecture_detail{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .ganre_apply-btn{
+        background-color: #13AE6A;
+        color: white;
+        padding: 15px 50px;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 18px;
+    }
+    .prefecture_name{
+        font-size: 30px;
+        padding: 20px 15px 20px 15px;
+    }
+    .recent_detail p, .ganre_detail p {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .ganre_detail{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ganre_name{
+        font-size: 30px;
+    }
+    .ganre_apply{
+        margin-top: 30px;
+    }
+    .ganre_type{
+        padding: 10px;
+    }
+    .ganre_detail{
+        padding: 10px
+    }
+}
+/* @media only screen and (max-width:768px) {
+    .prefecture_img img{
+        height: calc(100vh - 60px);
+    }
+    .prefecture_img{
+        padding-top: 60px;
+    }
+} */
+@media only screen and (max-width:460px) {
+    .recent_detail p, .ganre_detail p {
+        font-size: 15px;
+    }
+    .ganre_apply-btn{
+        font-size: 25px;
+        padding: 15px 20px;
+    }
+    
+}
